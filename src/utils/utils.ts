@@ -45,7 +45,26 @@ type isoBuyParams = {
     timestamp : number;
 }
 
-type typeParam = debtParams | isoBuyParams ;
+type isoStopParams = {
+    symbol : string;
+    isIsolated : string;
+    side : string;
+    type : string;
+    quantity : number;
+    stopPrice : number;
+    price : number;
+    sideEffectType : string;
+    timeInForce : string;
+    timestamp : number;
+}
+
+type cancelOrds = {
+    symbol : string;
+    isIsolated: string;
+    timestamp : number;
+}
+
+type typeParam = debtParams | isoBuyParams | isoStopParams | cancelOrds;
 
 function generateQueryString(params:typeParam, apiSecret: string): string {
     console.log(params);

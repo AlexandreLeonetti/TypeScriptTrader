@@ -9,6 +9,10 @@ import * as utils from "./utils/utils";
 import * as ticker from "./exchangeApi/ticker";
 import * as getDebt from "./exchangeApi/getIsolatedDebt";
 import {isolatedBuyBor}     from "./exchangeApi/isolatedBuyBor";
+import {isolatedBuyNorm}    from "./exchangeApi/isolatedBuyNorm";
+import { isolatedShortBor } from "./exchangeApi/isolatedShortBor";
+import { isolatedStopBuy} from "./exchangeApi/isolatedStopBuy";
+import { isolatedCancelOrders } from "./exchangeApi/isolatedCancelOrds";
 
 dotenv.config();
 const _apiKey    : string= process.env.BINANCE_API_KEY || "";
@@ -20,9 +24,21 @@ async function test(): Promise<void> {
    await utils.sleep(1000);
     //let debt = await getDebt.getIsoDebt("BTCUSDT", _apiKey, _apiSecret);
     //console.log(debt);
+
     //let price = await ticker.getTickerPrice("BTCUSDT");
    //let bought = isolatedBuyBor("BTCUSDT", 0.001, _apiKey, _apiSecret);
-   //console.log(bought);
+
+   //let boughtNorm = isolatedBuyNorm("BTCUSDT", 0.001, _apiKey, _apiSecret);
+   //console.log(boughtNorm);
+
+   //let shortBor = isolatedShortBor("BTCUSDT", 0.0003, _apiKey, _apiSecret);
+   //console.log(shortBor);
+
+   //let iss =  await isolatedStopBuy("BTCUSDT", 0.0003, 70000,80000, _apiKey,_apiSecret);
+   //console.log(iss);
+
+   let canceled = await isolatedCancelOrders("SHIBUSDT", _apiKey, _apiSecret);
+   console.log(canceled);
 }
 
 

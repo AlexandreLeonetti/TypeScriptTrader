@@ -1,6 +1,5 @@
 /* get isolated debt from margin account on binance */
 import {formatter, generateQueryString} from "../utils/utils";
-import * as crypto from "crypto";
 
 
 /* change getBtcDebt into getFdusdDebt */
