@@ -6,13 +6,25 @@ async function sleep(ms:number) : Promise<void>{
     });
 }
 
-function formatter(s : string, factor : number, precision : number):number{
-    let n = factor*parseFloat(s);
-    let p = Math.pow(10, precision);
-    n=Math.trunc(n*p)/p;
-    n=parseFloat(n.toFixed(precision));
-    return n;
+function formatter(s: string | number, factor: number, precision: number): number {
+    if (typeof s === "string") {
+        let n = factor * parseFloat(s);
+        let p = Math.pow(10, precision);
+        n = Math.trunc(n * p) / p;
+        n = parseFloat(n.toFixed(precision));
+        return n;
+    } else {
+        // When s is a number, directly apply the factor and precision
+        let n = s * factor;
+        let p = Math.pow(10, precision);
+        n = Math.trunc(n * p) / p;
+        n = parseFloat(n.toFixed(precision));
+        return n;
+    }
 }
+
+
+
 /*
 function generateQueryString(symbol: string, timestamp: number, apiSecret: string): string {
     const params = { symbols: symbol, timestamp };
