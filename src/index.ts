@@ -16,7 +16,7 @@ import { isolatedCancelOrders } from "./exchangeApi/isolatedCancelOrds";
 
 dotenv.config();
 const _apiKey    : string= process.env.BINANCE_API_KEY || "";
-const _apiSecret : string= process.env.BINANCE_SECRET || "";
+const _apiSecret : string= process.env.BINANCE_SECRET  || "";
 const m1 = "58 * * * * * ";
 
 async function test(): Promise<void> {
