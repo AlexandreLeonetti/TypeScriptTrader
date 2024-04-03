@@ -11,6 +11,10 @@
      pricePrecision:5,
      sizePrecision:0
  },{
+    name:"ENAUSDT",
+    pricePrecision:3,
+    sizePrecision:2
+ },{
         name : "ETHFDUSD",
         pricePrecision : 2,
         sizePrecision  : 4

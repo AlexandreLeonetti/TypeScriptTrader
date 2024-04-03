@@ -20,6 +20,7 @@ dotenv.config();
 const _apiKey    : string= process.env.BINANCE_API_KEY || "";
 const _apiSecret : string= process.env.BINANCE_SECRET  || "";
 const m1 = "58 * * * * * ";
+const m5  = "57 4,9,14,19,24,29,34,39,44,49,54,59 * * * *";
 /*
 const pair = {
     side : "BUY",
@@ -36,18 +37,18 @@ const pair = {
 */
 async function single(logStream:any){
     const bitcoin= await strat(
-         "SELL",
-         0.0003,
-         "BTCUSDT",
-         0.00035,
-         0.00038,
-         {highBound:200000, lowBound:10000},
+         "BUY",
+         100,
+         "ENAUSDT",
+         0.00500,
+         0.0080,
+         {highBound:200000, lowBound:0},
         logStream
     );
 }
 
    console.log("Current directory:", __dirname);
-let interval  = schedule.scheduleJob(m1, function (){
+let interval  = schedule.scheduleJob(m5, function (){
 	const day = logCurrentDay();
 
     const logStream = fs.createWriteStream(`./src/logs/${day}.log`, {flags:'a'});

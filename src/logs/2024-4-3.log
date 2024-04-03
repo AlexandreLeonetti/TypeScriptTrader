@@ -134,3 +134,521 @@ placed stop loss
   "side": "BUY",
   "isIsolated": true
 }
+
+
+ ***** Wed Apr 03 2024 17:59:57 GMT+0200 (Central European Summer Time) *****  
+quantity 500Symbol : ENAUSDT, quantity : 500 
+isoBuy and Borrow. 
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11469331,
+  "clientOrderId": "Idml6fvI0OQBwIvDE8XqrX",
+  "transactTime": 1712159998475,
+  "price": "0",
+  "origQty": "500",
+  "executedQty": "500",
+  "cummulativeQuoteQty": "599",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.198",
+      "qty": "500",
+      "commission": "0.5",
+      "commissionAsset": "ENA",
+      "tradeId": 3069846
+    }
+  ],
+  "marginBuyBorrowAsset": "USDT",
+  "marginBuyBorrowAmount": "413.595",
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11469331,
+  "clientOrderId": "Idml6fvI0OQBwIvDE8XqrX",
+  "transactTime": 1712159998475,
+  "price": "0",
+  "origQty": "500",
+  "executedQty": "500",
+  "cummulativeQuoteQty": "599",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.198",
+      "qty": "500",
+      "commission": "0.5",
+      "commissionAsset": "ENA",
+      "tradeId": 3069846
+    }
+  ],
+  "marginBuyBorrowAsset": "USDT",
+  "marginBuyBorrowAmount": "413.595",
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+symbol ENAUSDT, quantity : 498.5, stopPrice : 1.197, limit : 1.197 
+placed stop loss
+{
+  "code": -2010,
+  "msg": "Stop price would trigger immediately."
+}
+symbol ENAUSDT, quantity : 498.5, stopPrice : 1.197, limit : 1.197 
+placed stop loss 2nd trial
+{
+  "code": -2010,
+  "msg": "Stop price would trigger immediately."
+}
+
+
+ ***** Wed Apr 03 2024 18:04:57 GMT+0200 (Central European Summer Time) *****  
+quantity 500Symbol : ENAUSDT, quantity : 500 
+isoBuy and Borrow. 
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11565148,
+  "clientOrderId": "7ueYRl3GNYuoEdjdhj9JlP",
+  "transactTime": 1712160298479,
+  "price": "0",
+  "origQty": "500",
+  "executedQty": "500",
+  "cummulativeQuoteQty": "588.5",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.177",
+      "qty": "398",
+      "commission": "0.398",
+      "commissionAsset": "ENA",
+      "tradeId": 3101657
+    },
+    {
+      "price": "1.177",
+      "qty": "102",
+      "commission": "0.102",
+      "commissionAsset": "ENA",
+      "tradeId": 3101658
+    }
+  ],
+  "marginBuyBorrowAsset": "USDT",
+  "marginBuyBorrowAmount": "405.4147742",
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11565148,
+  "clientOrderId": "7ueYRl3GNYuoEdjdhj9JlP",
+  "transactTime": 1712160298479,
+  "price": "0",
+  "origQty": "500",
+  "executedQty": "500",
+  "cummulativeQuoteQty": "588.5",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.177",
+      "qty": "398",
+      "commission": "0.398",
+      "commissionAsset": "ENA",
+      "tradeId": 3101657
+    },
+    {
+      "price": "1.177",
+      "qty": "102",
+      "commission": "0.102",
+      "commissionAsset": "ENA",
+      "tradeId": 3101658
+    }
+  ],
+  "marginBuyBorrowAsset": "USDT",
+  "marginBuyBorrowAmount": "405.4147742",
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+symbol ENAUSDT, quantity : 498.5, stopPrice : 1.176, limit : 1.176 
+placed stop loss
+{
+  "code": -2010,
+  "msg": "Stop price would trigger immediately."
+}
+symbol ENAUSDT, quantity : 498.5, stopPrice : 1.176, limit : 1.176 
+placed stop loss 2nd trial
+{
+  "code": -2010,
+  "msg": "Stop price would trigger immediately."
+}
+
+
+ ***** Wed Apr 03 2024 18:14:57 GMT+0200 (Central European Summer Time) *****  
+quantity 250Symbol : ENAUSDT, quantity : 250 
+isoBuy and Borrow. 
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11695199,
+  "clientOrderId": "yA6BkJdDu5y5kPPkpvp8z1",
+  "transactTime": 1712160898218,
+  "price": "0",
+  "origQty": "250",
+  "executedQty": "250",
+  "cummulativeQuoteQty": "309.75",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.239",
+      "qty": "250",
+      "commission": "0.25",
+      "commissionAsset": "ENA",
+      "tradeId": 3137982
+    }
+  ],
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11695199,
+  "clientOrderId": "yA6BkJdDu5y5kPPkpvp8z1",
+  "transactTime": 1712160898218,
+  "price": "0",
+  "origQty": "250",
+  "executedQty": "250",
+  "cummulativeQuoteQty": "309.75",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.239",
+      "qty": "250",
+      "commission": "0.25",
+      "commissionAsset": "ENA",
+      "tradeId": 3137982
+    }
+  ],
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+symbol ENAUSDT, quantity : 249.25, stopPrice : 1.237, limit : 1.237 
+placed stop loss
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11695330,
+  "clientOrderId": "TOE68MFJgINOXgxSKlw5pF",
+  "transactTime": 1712160898834,
+  "type": "STOP_LOSS_LIMIT",
+  "side": "SELL",
+  "isIsolated": true
+}
+
+
+ ***** Wed Apr 03 2024 18:19:57 GMT+0200 (Central European Summer Time) *****  
+quantity 150Symbol : ENAUSDT, quantity : 150 
+isoBuy and Borrow. 
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11792415,
+  "clientOrderId": "MZjRxOVjbeRoVckTEiva8r",
+  "transactTime": 1712161198914,
+  "price": "0",
+  "origQty": "150",
+  "executedQty": "150",
+  "cummulativeQuoteQty": "190.5",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.27",
+      "qty": "150",
+      "commission": "0.15",
+      "commissionAsset": "ENA",
+      "tradeId": 3174262
+    }
+  ],
+  "marginBuyBorrowAsset": "USDT",
+  "marginBuyBorrowAmount": "6.78399136",
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11792415,
+  "clientOrderId": "MZjRxOVjbeRoVckTEiva8r",
+  "transactTime": 1712161198914,
+  "price": "0",
+  "origQty": "150",
+  "executedQty": "150",
+  "cummulativeQuoteQty": "190.5",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.27",
+      "qty": "150",
+      "commission": "0.15",
+      "commissionAsset": "ENA",
+      "tradeId": 3174262
+    }
+  ],
+  "marginBuyBorrowAsset": "USDT",
+  "marginBuyBorrowAmount": "6.78399136",
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+symbol ENAUSDT, quantity : 149.55, stopPrice : 1.267, limit : 1.266 
+placed stop loss
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11792699,
+  "clientOrderId": "6c46Ia1w8DacTT1T5dbHAm",
+  "transactTime": 1712161199533,
+  "type": "STOP_LOSS_LIMIT",
+  "side": "SELL",
+  "isIsolated": true
+}
+
+
+ ***** Wed Apr 03 2024 18:24:57 GMT+0200 (Central European Summer Time) *****  
+quantity 150Symbol : ENAUSDT, quantity : 150 
+isoBuy and Borrow. 
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11885816,
+  "clientOrderId": "9kSLlcebgkIfuJOQ8iB3wF",
+  "transactTime": 1712161498362,
+  "price": "0",
+  "origQty": "150",
+  "executedQty": "150",
+  "cummulativeQuoteQty": "194.25",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.295",
+      "qty": "150",
+      "commission": "0.15",
+      "commissionAsset": "ENA",
+      "tradeId": 3207966
+    }
+  ],
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11885816,
+  "clientOrderId": "9kSLlcebgkIfuJOQ8iB3wF",
+  "transactTime": 1712161498362,
+  "price": "0",
+  "origQty": "150",
+  "executedQty": "150",
+  "cummulativeQuoteQty": "194.25",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.295",
+      "qty": "150",
+      "commission": "0.15",
+      "commissionAsset": "ENA",
+      "tradeId": 3207966
+    }
+  ],
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+symbol ENAUSDT, quantity : 149.55, stopPrice : 1.292, limit : 1.291 
+placed stop loss
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11885899,
+  "clientOrderId": "QIzVvfrruN9hUDVwIVhwd4",
+  "transactTime": 1712161498975,
+  "type": "STOP_LOSS_LIMIT",
+  "side": "SELL",
+  "isIsolated": true
+}
+
+
+ ***** Wed Apr 03 2024 18:29:57 GMT+0200 (Central European Summer Time) *****  
+quantity 150Symbol : ENAUSDT, quantity : 150 
+isoBuy and Borrow. 
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11964974,
+  "clientOrderId": "LPQIjllQju3e50E0Yt4vgi",
+  "transactTime": 1712161798354,
+  "price": "0",
+  "origQty": "150",
+  "executedQty": "150",
+  "cummulativeQuoteQty": "187.6622",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.251",
+      "qty": "54.25",
+      "commission": "0.05425",
+      "commissionAsset": "ENA",
+      "tradeId": 3232908
+    },
+    {
+      "price": "1.251",
+      "qty": "83.55",
+      "commission": "0.08355",
+      "commissionAsset": "ENA",
+      "tradeId": 3232909
+    },
+    {
+      "price": "1.252",
+      "qty": "12.2",
+      "commission": "0.0122",
+      "commissionAsset": "ENA",
+      "tradeId": 3232910
+    }
+  ],
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11964974,
+  "clientOrderId": "LPQIjllQju3e50E0Yt4vgi",
+  "transactTime": 1712161798354,
+  "price": "0",
+  "origQty": "150",
+  "executedQty": "150",
+  "cummulativeQuoteQty": "187.6622",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.251",
+      "qty": "54.25",
+      "commission": "0.05425",
+      "commissionAsset": "ENA",
+      "tradeId": 3232908
+    },
+    {
+      "price": "1.251",
+      "qty": "83.55",
+      "commission": "0.08355",
+      "commissionAsset": "ENA",
+      "tradeId": 3232909
+    },
+    {
+      "price": "1.252",
+      "qty": "12.2",
+      "commission": "0.0122",
+      "commissionAsset": "ENA",
+      "tradeId": 3232910
+    }
+  ],
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+symbol ENAUSDT, quantity : 149.55, stopPrice : 1.248, limit : 1.245 
+placed stop loss
+{
+  "symbol": "ENAUSDT",
+  "orderId": 11965187,
+  "clientOrderId": "06KadnA8N0kSdZUzdpKgfr",
+  "transactTime": 1712161798987,
+  "type": "STOP_LOSS_LIMIT",
+  "side": "SELL",
+  "isIsolated": true
+}
+
+
+ ***** Wed Apr 03 2024 18:34:57 GMT+0200 (Central European Summer Time) *****  
+quantity 100Symbol : ENAUSDT, quantity : 100 
+isoBuy and Borrow. 
+{
+  "symbol": "ENAUSDT",
+  "orderId": 12046239,
+  "clientOrderId": "EwahibMi2i9NsgkDCQ5hWB",
+  "transactTime": 1712162098343,
+  "price": "0",
+  "origQty": "100",
+  "executedQty": "100",
+  "cummulativeQuoteQty": "121.2",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.212",
+      "qty": "100",
+      "commission": "0.1",
+      "commissionAsset": "ENA",
+      "tradeId": 3260391
+    }
+  ],
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+{
+  "symbol": "ENAUSDT",
+  "orderId": 12046239,
+  "clientOrderId": "EwahibMi2i9NsgkDCQ5hWB",
+  "transactTime": 1712162098343,
+  "price": "0",
+  "origQty": "100",
+  "executedQty": "100",
+  "cummulativeQuoteQty": "121.2",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "1.212",
+      "qty": "100",
+      "commission": "0.1",
+      "commissionAsset": "ENA",
+      "tradeId": 3260391
+    }
+  ],
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+symbol ENAUSDT, quantity : 99.7, stopPrice : 1.205, limit : 1.202 
+placed stop loss
+{
+  "symbol": "ENAUSDT",
+  "orderId": 12046455,
+  "clientOrderId": "WfvOo6w5fFuH8p3EAYQCER",
+  "transactTime": 1712162098970,
+  "type": "STOP_LOSS_LIMIT",
+  "side": "SELL",
+  "isIsolated": true
+}

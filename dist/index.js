@@ -23,27 +23,40 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const config = __importStar(require("./config/config"));
-const utils = __importStar(require("./utils/utils"));
+const dotenv_1 = __importDefault(require("dotenv"));
+const fs = __importStar(require("fs"));
+const schedule = __importStar(require("node-schedule"));
+const logic_1 = require("./logic/logic");
+const logic_2 = require("./logic/logic");
+dotenv_1.default.config();
+const _apiKey = process.env.BINANCE_API_KEY || "";
+const _apiSecret = process.env.BINANCE_SECRET || "";
 const m1 = "58 * * * * * ";
-function test() {
-    return __awaiter(this, void 0, void 0, function* () {
-        yield utils.sleep(5000);
-        console.log(config);
-        yield utils.sleep(5000);
-        console.log(3);
-        yield utils.sleep(5000);
-        console.log(2);
-    });
+const m5 = "57 4,9,14,19,24,29,34,39,44,49,54,59 * * * *";
+/*
+const pair = {
+    side : "BUY",
+    qty  : 0.03,
+    name : "BTCFDUSD",
+    asset: "BTC",
+    stop : 0.00035,
+    limit: 0.00038,
+    range: {
+        highBound : 167334,
+        lowBound  :69860
+    }
 }
-test();
+*/
+async function single(logStream) {
+    const bitcoin = await (0, logic_2.strat)("BUY", 100, "ENAUSDT", 0.00500, 0.0080, { highBound: 200000, lowBound: 0 }, logStream);
+}
+console.log("Current directory:", __dirname);
+let interval = schedule.scheduleJob(m5, function () {
+    const day = (0, logic_1.logCurrentDay)();
+    const logStream = fs.createWriteStream(`./src/logs/${day}.log`, { flags: 'a' });
+    single(logStream);
+});
