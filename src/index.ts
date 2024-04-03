@@ -13,34 +13,45 @@ import {isolatedBuyNorm}    from "./exchangeApi/isolatedBuyNorm";
 import { isolatedShortBor } from "./exchangeApi/isolatedShortBor";
 import { isolatedStopBuy} from "./exchangeApi/isolatedStopBuy";
 import { isolatedCancelOrders } from "./exchangeApi/isolatedCancelOrds";
+import { logCurrentDay } from "./logic/logic";
+import { strat } from "./logic/logic";
 
 dotenv.config();
 const _apiKey    : string= process.env.BINANCE_API_KEY || "";
 const _apiSecret : string= process.env.BINANCE_SECRET  || "";
 const m1 = "58 * * * * * ";
-
-async function test(): Promise<void> {
-
-   await utils.sleep(1000);
-    //let debt = await getDebt.getIsoDebt("BTCUSDT", _apiKey, _apiSecret);
-    //console.log(debt);
-
-    //let price = await ticker.getTickerPrice("BTCUSDT");
-   //let bought = isolatedBuyBor("BTCUSDT", 0.001, _apiKey, _apiSecret);
-
-   //let boughtNorm = isolatedBuyNorm("BTCUSDT", 0.001, _apiKey, _apiSecret);
-   //console.log(boughtNorm);
-
-   //let shortBor = isolatedShortBor("BTCUSDT", 0.0003, _apiKey, _apiSecret);
-   //console.log(shortBor);
-
-   //let iss =  await isolatedStopBuy("BTCUSDT", 0.0003, 70000,80000, _apiKey,_apiSecret);
-   //console.log(iss);
-
-   let canceled = await isolatedCancelOrders("SHIBUSDT", _apiKey, _apiSecret);
-   console.log(canceled);
+/*
+const pair = {
+    side : "BUY",
+    qty  : 0.03,
+    name : "BTCFDUSD",
+    asset: "BTC",
+    stop : 0.00035,
+    limit: 0.00038,
+    range: {
+        highBound : 167334,
+        lowBound  :69860
+    }
+}
+*/
+async function single(logStream:any){
+    const bitcoin= await strat(
+         "SELL",
+         0.0003,
+         "BTCUSDT",
+         0.00035,
+         0.00038,
+         {highBound:200000, lowBound:10000},
+        logStream
+    );
 }
 
+   console.log("Current directory:", __dirname);
+let interval  = schedule.scheduleJob(m1, function (){
+	const day = logCurrentDay();
 
+    const logStream = fs.createWriteStream(`./src/logs/${day}.log`, {flags:'a'});
 
-test();
+    single(logStream);
+
+});

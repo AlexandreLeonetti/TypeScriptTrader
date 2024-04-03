@@ -1,0 +1,136 @@
+
+
+ ***** Wed Apr 03 2024 10:11:58 GMT+0200 (Central European Summer Time) *****  
+quantity 0.0003Symbol : BTCUSDT, quantity : 0.00029 
+isoBuy and Borrow. 
+{
+  "symbol": "BTCUSDT",
+  "orderId": 26217710396,
+  "clientOrderId": "K48k78MOTEj0NkGF04ySgj",
+  "transactTime": 1712131919227,
+  "price": "0",
+  "origQty": "0.00029",
+  "executedQty": "0.00029",
+  "cummulativeQuoteQty": "19.1437642",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "66012.98",
+      "qty": "0.00029",
+      "commission": "0.00000029",
+      "commissionAsset": "BTC",
+      "tradeId": 3529192565
+    }
+  ],
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+{
+  "symbol": "BTCUSDT",
+  "orderId": 26217710396,
+  "clientOrderId": "K48k78MOTEj0NkGF04ySgj",
+  "transactTime": 1712131919227,
+  "price": "0",
+  "origQty": "0.00029",
+  "executedQty": "0.00029",
+  "cummulativeQuoteQty": "19.1437642",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "66012.98",
+      "qty": "0.00029",
+      "commission": "0.00000029",
+      "commissionAsset": "BTC",
+      "tradeId": 3529192565
+    }
+  ],
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+symbol BTCUSDT, quantity : 0.00028, stopPrice : 65989.87, limit : 65987.89 
+placed stop loss
+{
+  "symbol": "BTCUSDT",
+  "orderId": 26217710761,
+  "clientOrderId": "QZ1374NkN3Boi1YlgX9hdE",
+  "transactTime": 1712131919815,
+  "type": "STOP_LOSS_LIMIT",
+  "side": "SELL",
+  "isIsolated": true
+}
+
+
+ ***** Wed Apr 03 2024 10:13:58 GMT+0200 (Central European Summer Time) *****  
+quantity 0.0003Symbol : BTCUSDT, quantity : 0.00029 
+isoBuy and Borrow. 
+{
+  "symbol": "BTCUSDT",
+  "orderId": 26217745076,
+  "clientOrderId": "lJhDf3nwblVogvvxBd5fYU",
+  "transactTime": 1712132039381,
+  "price": "0",
+  "origQty": "0.00029",
+  "executedQty": "0.00029",
+  "cummulativeQuoteQty": "19.1540041",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "SELL",
+  "fills": [
+    {
+      "price": "66048.29",
+      "qty": "0.00029",
+      "commission": "0.019154",
+      "commissionAsset": "USDT",
+      "tradeId": 3529195788
+    }
+  ],
+  "marginBuyBorrowAsset": "BTC",
+  "marginBuyBorrowAmount": "0.00028049",
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+{
+  "symbol": "BTCUSDT",
+  "orderId": 26217745076,
+  "clientOrderId": "lJhDf3nwblVogvvxBd5fYU",
+  "transactTime": 1712132039381,
+  "price": "0",
+  "origQty": "0.00029",
+  "executedQty": "0.00029",
+  "cummulativeQuoteQty": "19.1540041",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "SELL",
+  "fills": [
+    {
+      "price": "66048.29",
+      "qty": "0.00029",
+      "commission": "0.019154",
+      "commissionAsset": "USDT",
+      "tradeId": 3529195788
+    }
+  ],
+  "marginBuyBorrowAsset": "BTC",
+  "marginBuyBorrowAmount": "0.00028049",
+  "isIsolated": true,
+  "selfTradePreventionMode": "EXPIRE_MAKER"
+}
+symbol BTCUSDT, quantity : 0.00028, stopPrice : 66071.4, limit : 66073.38 
+placed stop loss
+{
+  "symbol": "BTCUSDT",
+  "orderId": 26217745313,
+  "clientOrderId": "xzV4EFal3sD0Ew7aShdQdx",
+  "transactTime": 1712132040632,
+  "type": "STOP_LOSS_LIMIT",
+  "side": "BUY",
+  "isIsolated": true
+}

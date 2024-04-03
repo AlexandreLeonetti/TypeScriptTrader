@@ -278,7 +278,15 @@ async function rangeBoundaries(side:string, symbol:string, price:number, t:any){
         return false;
     }
 }
-async function strat(side:"BUY"|"SELL",  qty:number, symbol:string, asset:string,  stopLoss:number, limitLoss:number, range=null, logStream:any) {
+async function strat(
+	side:"BUY"|"SELL",  
+	qty:number, 
+	symbol:string, 
+	stopLoss:number, 
+	limitLoss:number, 
+	range:any, 
+	logStream:any
+	) {
 //async function strat({side,  qty, name, asset,  stop, limit, range=null}, logStream) {
     let tres = range;
 
@@ -294,7 +302,7 @@ async function strat(side:"BUY"|"SELL",  qty:number, symbol:string, asset:string
 
     logStream.write(logMsg);
 
-    let  error=null, borUsd=null, freeUsd=null, borAsset=null, freeAsset=0 ;//= await TEST_BALANCE(symbol,  asset, _apiKey, _apiSecret, logStream );
+//    let  error=null, borUsd=null, freeUsd=null, borAsset=null, freeAsset=0 ;//= await TEST_BALANCE(symbol,  asset, _apiKey, _apiSecret, logStream );
 
     let price = await GET_PRICE(symbol);
 	price = price ?? 0;
@@ -324,8 +332,8 @@ async function multi(logStream:any){
     //	await sleep(100);
 
     //await sleep(400);
-    const two = await strat("BUY", 0.010, "BTCUSDT","BTC",  0.01,0.0150,logStream,70000);
-    const sol= await strat("BUY", 1, "SOLUSDT","SOL",  0.025,0.029,logStream,143);//4.4
+    const two = await strat("BUY", 0.010, "BTCUSDT",  0.01,0.0150,logStream,70000);
+    const sol= await strat("BUY", 1, "SOLUSDT",  0.025,0.029,logStream,143);//4.4
     //await sleep(500);
     //const link = await strat("BUY", 7, "LINKUSDT","LINK",0.015,0.019,logStream,20.8);
     //const ltc  = await strat("SELL",1 , "LTCBTC",  "LTC", 0.010,0.013,logStream, 0.00129);//1
@@ -336,29 +344,29 @@ async function multi(logStream:any){
     //const sei = await strat("BUY", 25, "SEIUSDT", "SEI", 0.01,0.013,logStream, 0.87);
     await sleep(500);
 
-    const stx = await strat("BUY", 20, "STXUSDT", "STX", 0.045, 0.050, logStream,3.1);
-    const fet =await strat("BUY", 25, "FETUSDT", "FET", 0.05, 0.055, logStream, 2.27);
+    const stx = await strat("BUY", 20, "STXUSDT",  0.045, 0.050, logStream,3.1);
+    const fet =await strat("BUY", 25, "FETUSDT",  0.05, 0.055, logStream, 2.27);
 
     await sleep(500);
 
-    const eth = await strat("BUY", 0.15, "ETHUSDT", "ETH", 0.01,0.015, logStream, 3800);
-    const pepe=await strat("BUY",5000000,"PEPEUSDT","PEPE", 0.050, 0.055, logStream,0.000009);
+    const eth = await strat("BUY", 0.15, "ETHUSDT",  0.01,0.015, logStream, 3800);
+    const pepe=await strat("BUY",5000000,"PEPEUSDT", 0.050, 0.055, logStream,0.000009);
 
     await sleep(500);
 
-    const paxgBtc= await strat("SELL", 0.1, "PAXGBTC", "PAXG", 0.01, 0.015, logStream, 0.033);
-    const agix=await strat("BUY", 25, "AGIXUSDT", "AGIX", 0.05,0.055, logStream, 1.25);
+    const paxgBtc= await strat("SELL", 0.1, "PAXGBTC",  0.01, 0.015, logStream, 0.033);
+    const agix=await strat("BUY", 25, "AGIXUSDT",  0.05,0.055, logStream, 1.25);
     //const fil = await strat("BUY", 2.5, "FILFDUSD", "FIL", 0.045, 0.050, logStream, 8.5);
 
     await sleep(500);
 
-    const shib=await strat("BUY", 1000000,"SHIBUSDT", "SHIB", 0.055, 0.059, logStream, 0.000034);
-    const bnb = await strat("BUY", 0.6, "BNBUSDT", "BNB", 0.010,0.015,logStream,505);
+    const shib=await strat("BUY", 1000000,"SHIBUSDT",  0.055, 0.059, logStream, 0.000034);
+    const bnb = await strat("BUY", 0.6, "BNBUSDT", 0.010,0.015,logStream,505);
 	
     await sleep(500);
 
-    const bch = await strat("BUY", 0.15, "BCHUSDT", "BCH", 0.045, 0.05, logStream, 400);
-    const doge= await strat("BUY", 1000, "DOGEUSDT", "DOGE", 0.035,0.039, logStream, 0.17);
+    const bch = await strat("BUY", 0.15, "BCHUSDT",  0.045, 0.05, logStream, 400);
+    const doge= await strat("BUY", 1000, "DOGEUSDT",  0.035,0.039, logStream, 0.17);
 
     //const usdc = await strat("BUY",0.04, "BTCUSDC","BTC", 0.006,0.007,logStream,53500);
 }
@@ -369,7 +377,7 @@ async function multiFast(logStream:any){
 }
 
 async function single (logStream:any){
-    const usdc = await strat("SELL",0.001, "BTCUSDC","BTC", 0.001,0.0015,logStream,66800);
+    const usdc = await strat("SELL",0.001, "BTCUSDC", 0.001,0.0015,logStream,66800);
 }
 
 
